@@ -6,7 +6,7 @@ const FlightCard = ( {flightId, flightName, username, altitude} ) => {
 
     const [flightData, setFlightData] = useState(null);
 
-    const baseURL = `https://api.infiniteflight.com/public/v2/sessions/df2a8d19-3a54-4ce5-ae65-0b722186e44c/flights/${flightId}/flightplan`;
+    const baseURL = `https://api.infiniteflight.com/public/v2/sessions/df2a8d19-3a54-4ce5-ae65-0b722186e44c/flights/${flightId}/flightplan?apikey=${process.env.REACT_APP_IF_APIKEY}`
 
     useEffect(() => {
         const fetchData = async () => {

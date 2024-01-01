@@ -5,7 +5,7 @@ import axios from 'axios'
 const FlightList = () => {
     
     const [flightsList, setFlightsList] = useState([]);
-    const baseURL = "https://api.infiniteflight.com/public/v2/sessions/df2a8d19-3a54-4ce5-ae65-0b722186e44c/flights?apikey=vyqaqnsamc10elhbhcj1iy1bkc9enzpu"
+    const baseURL = `https://api.infiniteflight.com/public/v2/sessions/df2a8d19-3a54-4ce5-ae65-0b722186e44c/flights?apikey=vyqaqnsamc10elhbhcj1iy1bkc9enzpu`
     useEffect(() => {
         const fetchData = async () => {
           try {
